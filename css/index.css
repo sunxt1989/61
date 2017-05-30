@@ -1,0 +1,376 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, dialog, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+/* ios默认文本框阴影 */
+input[type=text], textarea {
+    -webkit-appearance: none;
+}
+/* 低版本安卓文本框层级问题 */
+input:focus {
+    -webkit-user-modify: read-write-plaintext-only;
+}
+ol, ul, li, menu {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+html, body {
+    width: 100%;
+    font-size: 10px;
+    font-family: "SimHei", "Helvetica Neue", Arial, "Droid Sans", sans-serif;
+    line-height: 1;
+    color: #303030;
+}
+html {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: 100%;
+}
+a, button, input {
+    outline: 0 none;
+    text-decoration: none;
+}
+img {
+    border: 0 none;
+    vertical-align: bottom;
+    -ms-interpolation-mode: bicubic;
+    max-width: 100%;
+}
+.hide {
+    display: none;
+}
+.cf:after { clear: both; content: ""; display: block; height: 0; overflow: hidden; visibility: hidden; zoom: 1; }
+#audio_btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 200;
+    display: none;
+    width: 30px;
+    height: 30px
+}
+
+.off {
+    background-image: url(../images/normalmusic.svg);
+    background-size: contain
+}
+
+.rotate {
+    -webkit-animation: rotating 1.2s linear infinite;
+    -moz-animation: rotating 1.2s linear infinite;
+    -o-animation: rotating 1.2s linear infinite;
+    animation: rotating 1.2s linear infinite
+}
+
+@-webkit-keyframes rotating {
+    from {
+        -webkit-transform: rotate(0)
+    }
+
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes rotating {
+    from {
+        -moz-transform: rotate(0)
+    }
+
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+body{
+    background-color: #FFE713;
+}
+.swiper-container {
+    width: 320px;
+    height: 486px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -243px;
+    margin-left: -160px;
+}
+.page1 .ren{
+    position: absolute;
+    width: 293px;
+    height: 323px;
+    bottom:0px;
+    left:14px;
+}
+.page1 .kuai{
+    width: 54px;
+    height: 100px;
+    position: absolute;
+    top:-10px;
+    left:16px;
+}
+.page1 .le{
+    width: 54px;
+    height: 100px;
+    position: absolute;
+    top:-10px;
+    right:16px;
+}
+.page1 .title1{
+    position: absolute;
+    top:95px;
+    left:16px;
+}
+.page1 .title2{
+    position: absolute;
+    top: 95px;
+    left: 150px;
+}
+.page1 .title3{
+    position: absolute;
+    top:95px;
+    right:16px;
+}
+.page1 .happy{
+    position: absolute;
+    top: 60px;
+    left: 90px;
+}
+.page1 .duanwu{
+    position: absolute;
+    top: 145px;
+    left: 20px;
+}
+.xiaoren{
+    position: absolute;
+    width: 122px;
+    height: 127px;
+    top: 10px;
+    right: 16px;
+}
+.bolang1{
+    position: absolute;
+    top:135px;
+    left:26px;
+}
+.bolang2{
+     position: absolute;
+     top:140px;
+     left:26px;
+}
+.bolang3{
+    position: absolute;
+    top:145px;
+    left:26px;
+}
+.title{
+    position: absolute;
+    top:110px;
+    left:26px;
+}
+.page2 .page2-p1{
+    font-size:16px;
+    width: 262px;
+    position: absolute;
+    top:170px;
+    left:26px;
+    line-height: 20px;
+    text-indent: 24px;
+}
+.page2 .page2-p2{
+    font-size:16px;
+    width: 262px;
+    position: absolute;
+    top:290px;
+    left:26px;
+    line-height: 20px;
+    text-indent: 24px;
+}
+.page2 .data{
+    font-size:16px;
+    position: absolute;
+    top:440px;
+    right:60px;
+}
+.page2 .name{
+    font-size:16px;
+    position: absolute;
+    top:460px;
+    right:60px;
+}
+.page3 .biankuang1{
+    width: 272px;
+    position: absolute;
+    top: 165px;
+    left: 22px;
+}
+.page3 .biankuang2{
+    width: 272px;
+    position: absolute;
+    top: 250px;
+    left: 22px;
+}
+.page3 .biankuang3{
+    width: 272px;
+    position: absolute;
+    top: 335px;
+    left: 22px;
+}
+.page3 .line{
+    width:1px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    top:14px;
+    left: 70px;
+    z-index: 7px;
+}
+.page3  .huodong{
+    font-size:20px;
+    position: absolute;
+    top: 27px;
+    left: 15px;
+}
+.page3 .play{
+    font-size:20px;
+    position: absolute;
+    top:10px;
+    left: 75px;
+}
+.page3 .play-time{
+    font-size:12px;
+    position: absolute;
+    top:35px;
+    left: 75px;
+}
+.page3 .play-td{
+    font-size:12px;
+    position: absolute;
+    top:50px;
+    left: 75px;
+}
+.page3 .note{
+    font-size:12px;
+    position: absolute;
+    bottom:20px;
+    left: 25px;
+}
+.page4 .photo1{
+    position: absolute;
+    top:170px;
+    left:26px;
+}
+.page4 .photo2{
+    position: absolute;
+    top:350px;
+    left:26px;
+}
+.page4 .photo3{
+    position: absolute;
+    top:350px;
+    left:166px;
+}
+.page5 .car{
+    width: 266px;
+    height: 212px;
+    position: absolute;
+    top:170px;
+    left: 26px;
+}
+.page5 .car-list{
+    font-size:14px;
+    position: absolute;
+    top:400px;
+    left: 70px;
+}
+.page5 .price{
+    font-size:18px;
+    color: rgb(235, 114, 97);
+    position: absolute;
+    top:430px;
+    left: 100px;
+}
+.page5 .buy{
+    font-size:12px;
+    padding: 4px;
+    background-color: rgb(235, 114, 97) ;
+    color:#FFFFFF;
+    position: absolute;
+    top: 433px;
+    left: 151px;
+}
+.page6 .map{
+    position: absolute;
+    top:160px;
+    left:30px;
+}
+.page6 .footer{
+    font-size:18px;
+    position: absolute;
+    top:400px;
+    left: 26px;
+}
+.page7 input{
+    font-size:18px;
+    color: black;
+    padding: 10px;
+    width: 223px;
+    box-sizing: border-box;
+    height: 43px;
+    background-color: #FFE713;
+}
+.page7 .input1{
+    position: absolute;
+    top:160px;
+    left:26px;
+    border: 2px solid #000000;
+}
+.page7 .input2{
+    position: absolute;
+    top:220px;
+    left:26px;
+    border: 2px solid #000000;
+}
+.page7 .input3{
+    position: absolute;
+    top:280px;
+    left:26px;
+    border: 2px solid #000000;
+}
+.page7 .input4{
+    position: absolute;
+    top:340px;
+    left:26px;
+    border: 2px solid #000000;
+}
+.page7 .tijiao{
+    position: absolute;
+    top:400px;
+    left:26px;
+    width: 224px;
+    height: 41px;
+    background-color: black;
+    color: #FFFFFF;
+}
